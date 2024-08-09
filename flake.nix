@@ -2,8 +2,8 @@
   description = "";
   inputs = {
     nixpkgs.url = "flake:nixpkgs/nixpkgs-unstable";
-    home-manager.follows = "nixpkgs";
-    nix-darwin.follows = "nixpkgs";
+    home-manager.url = "flake:home-manager";
+    nix-darwin.url = "flake:nix-darwin";
   };
   outputs = inputs:
     let

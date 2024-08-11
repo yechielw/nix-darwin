@@ -3,6 +3,7 @@ let
   homeModule = { config, lib, pkgs, ... }: {
     config = {
       home = {
+        homeDirectory = /Users/yechielworenklein;
         stateVersion = "24.11";
       };
       programs = {

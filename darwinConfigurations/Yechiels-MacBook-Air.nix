@@ -26,6 +26,9 @@ let
           pkgs.git
         ];
       };
+      homebrew = {
+        enable = true;
+      };
       programs = {
         zsh = {
           enable = true;

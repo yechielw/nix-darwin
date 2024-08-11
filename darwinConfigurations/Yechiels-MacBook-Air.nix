@@ -27,6 +27,7 @@ let
         ];
       };
       homebrew = {
+        casks = [ "wireshark" ];
         enable = true;
       };
       programs = {

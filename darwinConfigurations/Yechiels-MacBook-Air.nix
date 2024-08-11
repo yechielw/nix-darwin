@@ -27,12 +27,38 @@ let
         ];
       };
       homebrew = {
-        casks = [ "wireshark" ];
+        casks = [
+          "aerospace"
+          "alacritty"
+          "alt-tab"
+          "android-platform-tools"
+          "anydesk"
+          "betterdisplay"
+          "betterzip"
+          "espanso"
+          "google-chrome"
+          "hiddenbar"
+          "iina"
+          "iterm2"
+          "maccy"
+          "obsidian"
+          "raycast"
+          "shortcat"
+          "shottr"
+          "slack"
+          "spaceman"
+          "zed"
+        ];
         enable = true;
       };
       programs = {
         zsh = {
           enable = true;
+        };
+      };
+      security = {
+        pam = {
+          enableSudoTouchIdAuth = true;
         };
       };
       services = {

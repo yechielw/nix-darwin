@@ -7,6 +7,10 @@ let
         stateVersion = "24.11";
       };
       programs = {
+        git = {
+          userEmail = "41305372+yechielw@users.noreply.github.com";
+          userName = "Yechiel Worenklein";
+        };
         zellij = {
           enable = true;
         };

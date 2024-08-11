@@ -5,6 +5,7 @@ let
       home = {
         homeDirectory = lib.mkForce /Users/yechielworenklein;
         stateVersion = "24.11";
+        username = "yechielworenklein";
       };
       programs = {
         git = {

@@ -12,6 +12,9 @@ let
           userEmail = "41305372+yechielw@users.noreply.github.com";
           userName = "Yechiel Worenklein";
         };
+        home-manager = {
+          enable = true;
+        };
         zellij = {
           enable = true;
         };

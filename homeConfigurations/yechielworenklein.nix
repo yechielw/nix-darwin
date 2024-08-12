@@ -9,6 +9,7 @@ let
       };
       programs = {
         git = {
+          enable = true;
           userEmail = "41305372+yechielw@users.noreply.github.com";
           userName = "Yechiel Worenklein";
         };

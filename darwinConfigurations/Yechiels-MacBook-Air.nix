@@ -51,11 +51,6 @@ let
         ];
         enable = true;
       };
-      programs = {
-        zsh = {
-          enable = true;
-        };
-      };
       security = {
         pam = {
           enableSudoTouchIdAuth = true;

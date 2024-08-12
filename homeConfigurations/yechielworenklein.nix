@@ -16,9 +16,6 @@ let
         home-manager = {
           enable = true;
         };
-        zellij = {
-          enable = true;
-        };
       };
     };
   };

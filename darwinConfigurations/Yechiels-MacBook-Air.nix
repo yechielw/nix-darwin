@@ -11,19 +11,20 @@ let
     ];
     config = {
       documentation = {
-        enable = false;
+        enable = true;
       };
       environment = {
-        systemPackages = [
-          pkgs.neovim
-          pkgs.go
-          pkgs.nodejs_22
-          pkgs.wget
-          pkgs.gzip
-          pkgs.unzip
-          pkgs.gcc
-          pkgs.curl
-          pkgs.git
+        systemPackages = with pkgs; [
+          neovim
+          go
+          nodejs_22
+          wget
+          gzip
+          unzip
+          gcc
+          curl
+          git
+          termshark
         ];
       };
       homebrew = {
@@ -54,6 +55,30 @@ let
       security = {
         pam = {
           enableSudoTouchIdAuth = true;
+        };
+      };
+      system = {
+        defaults = {
+          dock = {
+            autohide = true;
+            autohide-delay = 0.0;
+            largesize = 16;
+            show-recents = false;
+
+          };
+          finder = {
+            AppleShowAllExtensions = true;
+            _FXShowPosixPathInTitle = true;
+            CreateDesktop = false;
+            FXDefaultSearchScope = "SCcf";
+            FXEnableExtensionChangeWarning = false;
+            FXPreferredViewStyle = "Nlsv";
+            ShowPathbar = true;
+          };
+          trackpad = {
+            Clicking = true;
+            TrackpadRightClick = true;
+          };
         };
       };
       services = {

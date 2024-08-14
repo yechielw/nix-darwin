@@ -25,6 +25,8 @@ let
           curl
           git
           termshark
+          home-manager
+          lazydocker
         ];
       };
       homebrew = {
@@ -63,7 +65,18 @@ let
             autohide = true;
             autohide-delay = 0.0;
             largesize = 16;
+            tilesize = 59;
             show-recents = false;
+            persistent-apps = [
+              "/Applications/Google Chrome.app"
+              "/Applications/iTerm.app"
+              "/Applications/Firefox.app"
+              "/Applications/Burp Suite Professional.app"
+              "/Applications/Obsidian.app"
+              "/System/Applications/Preview.app"
+              "/System/Applications/TextEdit.app"
+              "/Applications/Microsoft Teams (work or school).app"
+            ];
 
           };
           finder = {

@@ -51,6 +51,7 @@ let
           "slack"
           "spaceman"
           "zed"
+          "wezterm"
         ];
         enable = true;
       };
